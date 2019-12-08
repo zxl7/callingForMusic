@@ -4,7 +4,7 @@ Component({
    * 组件的属性列表
    */
   properties: {
-    musiclist:Array
+    musiclist: Array
 
   },
 
@@ -12,6 +12,7 @@ Component({
    * 组件的初始数据
    */
   data: {
+    playingId: -1
 
   },
 
@@ -19,10 +20,16 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    onSelect(){
-      console.log('beixuanzhong')
+    onSelect(event) {
+      // console.log(event)
+      this.setData({
+        playingId: event.currentTarget.dataset.musicid
+      })
+      wx.navigateTo({
+        url: '../../pages',
+      })
     }
-    
+
 
   }
 })

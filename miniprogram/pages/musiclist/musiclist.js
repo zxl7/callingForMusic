@@ -7,7 +7,6 @@ Page({
   data: {
     musiclist: [],
     listInfo: {}
-
   },
 
   /**
@@ -17,7 +16,7 @@ Page({
     wx.showLoading({
       title: '这次有点慢！',
     })
-    console.log(options)
+    // console.log(options)
     wx.cloud.callFunction({
       name: 'music',
       data: {
@@ -25,7 +24,7 @@ Page({
         $url: 'musiclist'
       }
     }).then((res) => {
-      console.log(res)
+      // console.log(res)
       const pl = res.result.playlist
       this.setData({
         musiclist: pl.tracks,
@@ -35,6 +34,7 @@ Page({
         }
       })
       // console.log(this.data.listInfo)
+      wx.hideLoading()
     })
 
   },
@@ -50,7 +50,6 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function() {
-    wx.hideLoading()
 
   },
 
