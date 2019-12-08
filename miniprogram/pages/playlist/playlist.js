@@ -1,7 +1,6 @@
 // pages/palylist/palylist.js
 const MAX_LIMIT = 15
 Page({
-
   /**
    * 页面的初始数据
    */
@@ -60,7 +59,7 @@ Page({
    */
   onPullDownRefresh: function() {
     this.setData({
-      playlist:[]
+      playlist: []
     })
     this._getPlaylist()
 
@@ -77,6 +76,8 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function() {},
+
+  // 向云服务请求获取歌单列表
   _getPlaylist() {
     wx.showLoading({
       title: '快马加鞭赶来啦',
@@ -85,7 +86,8 @@ Page({
       name: 'music',
       data: {
         start: this.data.playlist.length,
-        count: MAX_LIMIT
+        count: MAX_LIMIT,
+        $url: 'playlist'
       }
     }).then((res) => {
       // console.log(res)
@@ -94,6 +96,7 @@ Page({
       })
       wx.stopPullDownRefresh()
       wx.hideLoading()
+
     })
   }
 })

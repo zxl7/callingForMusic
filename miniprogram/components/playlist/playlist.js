@@ -23,13 +23,18 @@ Component({
    * 组件的初始数据
    */
   data: {
-    _count: 0 
+    _count: 0
   },
 
   /**
    * 组件的方法列表
    */
   methods: {
+    goToMusicList() {
+      wx.navigateTo({
+        url: `../../pages/musiclist/musiclist?playlistID=${this.properties.playlist.id}`,
+      })
+    },
 
     //  格式化歌单播放量数字
     _transformNum(num, point) {
