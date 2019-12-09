@@ -47,7 +47,14 @@
 					"id": 1,
 					"name": "pages/musiclist/musiclist",
 					"pathName": "pages/musiclist/musiclist",
-					"query": "playlistID= 2019129958",
+					"query": "playlistID=2438292020",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "pages/player/player",
+					"pathName": "pages/player/player",
+					"query": "musicId=1356350562&index=11",
 					"scene": null
 				}
 			]
