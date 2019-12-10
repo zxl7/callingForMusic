@@ -28,6 +28,7 @@
   text-align: center;
 }
 
+/* 唱片指针动画 */
 .player-disc::after {
   position: absolute;
   content: '';
@@ -158,7 +159,6 @@
 }
 
 /* 歌曲控制进度条及控制面板 */
-
 .player-pause {
   animation-play-state: paused;
 }
@@ -177,11 +177,11 @@
   color: #fefefe;
 }
 
-.icon-shangyishoushangyige, .icon-xiayigexiayishou {
+.icon-shangyishou, .icon-xiayishou {
   font-size: 80rpx;
 }
 
-.icon-bofang, .icon-suspend_icon {
+.icon-bofang, .icon-zanting1 {
   font-size: 120rpx;
   margin: 0 50rpx;
 }
