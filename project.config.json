@@ -56,6 +56,13 @@
 					"pathName": "pages/player/player",
 					"query": "musicId=1356350562&index=11",
 					"scene": null
+				},
+				{
+					"id": 3,
+					"name": "pages/profile/profile",
+					"pathName": "pages/profile/profile",
+					"query": "",
+					"scene": null
 				}
 			]
 		}

@@ -1,2 +1,57 @@
-<!--pages/profile/profile.wxml-->
-<text>pages/profile/profile.wxml</text>
+<!-- 我的模块头部布局 -->
+<view class="profile-header">
+  <view class="avatar-url">
+    <open-data type="userAvatarUrl"></open-data>
+  </view>
+  <open-data type="userNickName" class="nickname"></open-data>
+</view>
+
+<!-- 我的模块导航栏布局 -->
+<view class="profile-nav">
+  <view class="nav-item">
+    <navigator class="content" hover-class="none" url="/pages/profile-bloghistory/profile-bloghistory">
+      <i class="iconfont icon-ziyuanldpi-copy-copy-copy icon-nav"></i>
+      <text class="text">最近播放</text>
+      <i class="iconfont icon-arr-right"></i>
+    </navigator>
+  </view>
+  <view class="nav-item">
+    <navigator class="content" hover-class="none" url="/pages/profile-bloghistory/profile-bloghistory">
+      <i class="iconfont icon-shoucang icon-nav"></i>
+      <text class="text">我的发现</text>
+      <i class="iconfont icon-arr-right"></i>
+    </navigator>
+  </view>
+  <view class="nav-item">
+    <view class="content" bind:tap="getQrCode">
+      <i class="iconfont icon-xiaochengxuma icon-nav"></i>
+      <text class="text">小程序码</text>
+      <i class="iconfont icon-arr-right"></i>
+    </view>
+  </view>
+</view>
+
+<!-- 二维码弹窗 -->
+<view class="qrcode-popup" wx:if="{{showQrcode}}">
+  <!-- 二维码弹窗遮罩层 -->
+  <view class="qrcode-mask" bindtap="closePopup"></view>
+  <!-- 二维码弹窗主体 -->
+  <view class="popup {{showQrcode ? 'showAnimation' : ''}}">
+    <view class="popup-title">小程序码</view>
+    <view class="popup-img">
+      <image src="{{qrcodeImg}}" mode="widthFix" bindtap="previewImage"></image>
+    </view>
+    <view class="popup-content">
+      <view class="load-img">
+        <i class="iconfont icon-xiazai" bind:tap="onLoadImage"></i>
+      </view>
+      <button open-type="share" class="share-img">
+        <i class="iconfont icon-13"></i>
+      </button>
+    </view>
+  </view>
+</view>
+
+<!-- 全局音乐直达tab -->
+
+<x-global-music />
