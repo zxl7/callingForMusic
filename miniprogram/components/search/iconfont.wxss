@@ -15,42 +15,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-bofang:before {
-  content: "\e620";
-}
-
-.icon-shangyishou:before {
-  content: "\e600";
-}
-
-.icon-xiayishou:before {
-  content: "\e61b";
-}
-
-.icon-zanting1:before {
-  content: "\e67d";
-}
-
-.icon-arr-right:before {
-  content: "\e6ec";
-}
-
 .icon-sousuo:before {
   content: "\e670";
-}
-
-.icon-shoucang:before {
-  content: "\e602";
-}
-
-.icon-fabu:before {
-  content: "\e630";
-}
-
-.icon-ziyuanldpi-copy-copy-copy:before {
-  content: "\e601";
-}
-
-.icon-xiaochengxuma:before {
-  content: "\e7d2";
 }

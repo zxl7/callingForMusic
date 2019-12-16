@@ -15,11 +15,12 @@ App({
       })
     }
 
+    this.getOpenid()
     this.globalData = {
       openid: -1
     }
   },
-    // 全局函数
+    // 获取openid 
     getOpenid() {
       wx.cloud.callFunction({
         name: 'login'

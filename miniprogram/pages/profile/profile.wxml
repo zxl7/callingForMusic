@@ -9,7 +9,7 @@
 <!-- 我的模块导航栏布局 -->
 <view class="profile-nav">
   <view class="nav-item">
-    <navigator class="content" hover-class="none" url="/pages/profile-bloghistory/profile-bloghistory">
+    <navigator class="content" hover-class="none" url="/pages/profile-playhistory/profile-playhistory">
       <i class="iconfont icon-ziyuanldpi-copy-copy-copy icon-nav"></i>
       <text class="text">最近播放</text>
       <i class="iconfont icon-arr-right"></i>

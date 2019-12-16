@@ -39,6 +39,5 @@
       "selectedIconPath": "images/my-action.png"
     }]
   }  ,
-  "sitemapLocation": "sitemap.json",
-  "style": "v2"
+  "sitemapLocation": "sitemap.json"
 }
