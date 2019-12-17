@@ -25,35 +25,6 @@ Page({
   onLoad: function(options) {
     this._getPlaylist()
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function() {
-
-  },
-
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
@@ -77,11 +48,12 @@ Page({
    */
   onShareAppMessage: function() {},
 
-  // 向云服务请求获取歌单列表
   _getPlaylist() {
     wx.showLoading({
       title: '快马加鞭赶来啦',
     })
+
+    // 向云服务请求获取歌单列表
     wx.cloud.callFunction({
       name: 'music',
       data: {
@@ -90,10 +62,12 @@ Page({
         $url: 'playlist'
       }
     }).then((res) => {
-      // console.log(res)
+      console.log(res)
+      // 写入数据
       this.setData({
         playlist: this.data.playlist.concat(res.result.data)
       })
+      // 停止当前页面下拉刷新
       wx.stopPullDownRefresh()
       wx.hideLoading()
     })
