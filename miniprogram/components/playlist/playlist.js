@@ -31,6 +31,7 @@ Component({
    */
   methods: {
     goToMusicList() {
+      // 页面跳转自带参数
       wx.navigateTo({
         url: `../../pages/musiclist/musiclist?playlistID=${this.properties.playlist.id}`,
       })

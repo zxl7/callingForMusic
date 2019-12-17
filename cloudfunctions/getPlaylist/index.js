@@ -6,15 +6,15 @@ cloud.init()
 // 初始化云数据库
 const db = cloud.database()
 
-// 获取数据
+// 发送请求数据的方法
 const rp = require('request-promise')
 
 const URL = 'http://musicapi.xiecheng.live/personalized'
 
 const playlistCollection = db.collection('playlist') //获取 playlist 集合
 
-const MAX_LIMIT = 100
 // 每次请求数量
+const MAX_LIMIT = 100
 
 // 云函数入口函数
 exports.main = async(event, context) => {
@@ -43,7 +43,6 @@ exports.main = async(event, context) => {
       }
     })
   }
-
 
   // 获取最新歌单信息
   const playlist = await rp(URL).then((res) => {
