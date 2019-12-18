@@ -30,7 +30,8 @@ Page({
         musiclist: pl.tracks,
         listInfo: {
           coverImgUrl: pl.coverImgUrl,
-          name: pl.name
+          name: pl.name,
+          description: pl.description
         }
       })
       // console.log(this.data.listInfo)

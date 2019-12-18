@@ -8,6 +8,7 @@
   <view class='detail'>
   <!-- 文字 -->
     <view class='detail-name'>{{listInfo.name}} </view>
+    <view class='detail-description'>{{listInfo.description}}</view>
   </view>
 </view>
 <!-- 组件 --- 歌曲条目 -->

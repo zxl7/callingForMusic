@@ -47,4 +47,18 @@
 .detail .detail-name {
   font-size: 30rpx;
   font-weight: 400;
+  /* overflow: hidden;
+  text-overflow: ellipsis;
+  white-space:nowrap;  */
+}
+
+.detail-description {
+  font-size: 10rpx;
+  line-height: 35rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  text-indent: 0em;
 }
