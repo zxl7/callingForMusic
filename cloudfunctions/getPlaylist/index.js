@@ -1,21 +1,16 @@
 // 云函数入口文件
 const cloud = require('wx-server-sdk')
-
 cloud.init()
 
 // 初始化云数据库
 const db = cloud.database()
-
 // 发送请求数据的方法
 const rp = require('request-promise')
-
 const URL = 'http://musicapi.xiecheng.live/personalized'
-
 const playlistCollection = db.collection('playlist') //获取 playlist 集合
 
 // 每次请求数量
 const MAX_LIMIT = 100
-
 // 云函数入口函数
 exports.main = async(event, context) => {
   // const list = await playlistCollection.get() //原有数据
@@ -23,7 +18,6 @@ exports.main = async(event, context) => {
   
   const countResult = await playlistCollection.count() // 获取总的数据  对象格式
   const total = countResult.total //转换为数字格式
-
   const batchTimes = Math.ceil(total / MAX_LIMIT)
   // 请求发起的次数
   const tasks = [] //任务对象，放入promise数组 
