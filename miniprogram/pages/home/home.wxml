@@ -1,0 +1,55 @@
+<!-- 首页 -->
+<view class="home">
+  <!-- 信息展示 -->
+  <view class="header dfse">
+    <view class="header-item">
+      <view>
+        <span class="header-number">7</span>
+        <span>个</span>
+      </view>
+      <view>
+        已完成的任务
+        <van-icon name="arrow" />
+      </view>
+    </view>
+    <span class="bar"></span>
+    <view class="header-item">
+      <view>
+        <span class="header-number">377</span>
+        <span>分</span>
+      </view>
+      <view>
+        积分明细
+        <van-icon name="arrow" />
+      </view>
+    </view>
+  </view>
+  <!-- 兑换奖励 -->
+  <view class="title">兑换奖励</view>
+  <view class="main dfsa">
+    <view class="main-item">
+      <span>积分转盘大抽奖</span>
+      <van-button class="main-button" size="mini" color="rgb(249, 237, 145)" custom-style="color:black;" round>
+        去抽奖
+        <van-icon name="arrow" />
+      </van-button>
+    </view>
+    <view class="main-item">
+      <span>积分商城</span>
+      <van-button class="main-button" size="mini" color="rgb(249, 237, 145)" custom-style="color:black;" round>
+        去兑换
+        <van-icon name="arrow" />
+      </van-button>
+    </view>
+  </view>
+  <!-- 任务清单 -->
+  <view class="title">任务清单</view>
+  <main class="list">
+    <view class="list-item">
+      <cover-image class="list-img" src="../../images/logo.jpeg"></cover-image>
+      <view class="list-title">早饭吃两个鸡蛋</view>
+      <view class="list-subtitle">+10</view>
+      <van-button class="list-button" size="mini" color="#e46f65" round>完成</van-button>
+    </view>
+  </main>
+</view>

@@ -13,14 +13,8 @@ page {
   box-shadow: 0 2rpx 2rpx 3rpx rgba(0, 0, 0, 0.1);
   color: #fff;
   background-size: cover;
-  font-family: Arial,
-                 "PingFang SC",
-                 "Hiragino Sans GB",
-                 STHeiti,
-                 "Microsoft YaHei",
-                 "WenQuanYi Micro Hei",
-                 sans-serif;
-  background-image: url(https://www.elsetge.cat/myimg/f/63-635146_-.jpg);
+  font-family: Arial, "PingFang SC", "Hiragino Sans GB", STHeiti, "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  background-image: url(https://th.bing.com/th/id/R.7c757d05fae9c6c2cac1957820339a6e?rik=LnRRz0TAOrl%2bgA&riu=http%3a%2f%2fi2.hdslb.com%2fbfs%2farchive%2fae39261c97a1f5238bd1ade420284afe160faac7.jpg&ehk=xLhigzZgCZGVEiVx9CCkDKXm08ov2HqUPhN35sdjQfE%3d&risl=&pid=ImgRaw&r=0);
 }
 
 .avatar-url {
@@ -35,7 +29,8 @@ page {
   font-size: 36rpx;
 }
 
-.icon-pifu, .icon-touxiang {
+.icon-pifu,
+.icon-touxiang {
   font-size: 24rpx;
 }
 
@@ -100,7 +95,8 @@ page {
   margin-bottom: 60rpx;
 }
 
-.nav-item:nth-child(5), .nav-item:last-child {
+.nav-item:nth-child(5),
+.nav-item:last-child {
   border-bottom: none;
   font-size: 36rpx;
 }
@@ -204,7 +200,8 @@ page {
   height: 60rpx;
 }
 
-.load-img, .share-img {
+.load-img,
+.share-img {
   text-align: center;
   width: 50%;
   flex: 1;
@@ -219,7 +216,8 @@ page {
   border: none;
 }
 
-.icon-xiazai, .icon-13 {
+.icon-xiazai,
+.icon-13 {
   font-size: 44rpx;
   color: rgb(216, 30, 6);
 }

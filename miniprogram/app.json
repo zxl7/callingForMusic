@@ -1,38 +1,40 @@
 {
-  "pages": [
-    "pages/playlist/playlist",
-    "pages/blog/blog",
-    "pages/profile/profile"
-  ],
-  "requiredBackgroundModes":[
-    "audio"
-  ],
+  "pages": ["pages/home/home", "pages/blog/blog", "pages/main/main"],
+  "requiredBackgroundModes": ["audio"],
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#d43c33",
-    "navigationBarTitleText": "calling for music",
-    "navigationBarTextStyle": "white"
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "一个心愿",
+    "navigationBarTextStyle": "black"
   },
   "tabBar": {
     "color": "#000000",
     "selectedColor": "#d43c43",
-    "list": [{
-      "pagePath": "pages/playlist/playlist",
-      "text": "音乐",
-      "iconPath": "images/music.png",
-      "selectedIconPath": "images/music-action.png"
-    },{
-      "pagePath": "pages/blog/blog",
-      "text": "发现",
-      "iconPath": "images/blog.png",
-      "selectedIconPath": "images/blog-action.png"
-    },{
-      "pagePath": "pages/profile/profile",
-      "text": "我的",
-      "iconPath": "images/my.png",
-      "selectedIconPath": "images/my-action.png"
-    }]
-  }  ,
-  "sitemapLocation": "sitemap.json"
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "images/music.png",
+        "selectedIconPath": "images/music-action.png"
+      },
+      {
+        "pagePath": "pages/blog/blog",
+        "text": "发布",
+        "iconPath": "images/blog.png",
+        "selectedIconPath": "images/blog-action.png"
+      },
+      {
+        "pagePath": "pages/main/main",
+        "text": "我的",
+        "iconPath": "images/my.png",
+        "selectedIconPath": "images/my-action.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
+    "van-icon": "@vant/weapp/icon/index"
+  }
 }
